@@ -108,7 +108,7 @@ screenshots/               → Images for README
 
 1️⃣ Clone the repository
 
-    git clone <your-repo-link>
+    git clone https://github.com/samri-dddhi/Grocy.git
 
     cd grocy
 
