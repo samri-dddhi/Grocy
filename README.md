@@ -1,50 +1,117 @@
-# Welcome to your Expo app 👋
+🛒 Grocy
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Smarter Lists. Simpler Shopping.
 
-## Get started
+Grocy is a modern grocery planning and shopping assistant built using React Native and Expo. It helps users organize grocery items, track what needs to be purchased, revisit past items, set reminders, and personalize the experience with light/dark themes all while storing data locally on the device.
 
-1. Install dependencies
+Grocy makes grocery shopping effortless, intelligent, and enjoyable.
 
-   ```bash
-   npm install
-   ```
+✨ Features
+📝 Add Grocery Items
+Add items with a name, category, quantity, and optional notes
+User-friendly input flow with validation
+Categories help in quick organization
 
-2. Start the app
+📋 Smart Shopping List
+Displays groceries grouped by category
+Check items off when purchased
+Undo purchase anytime
+Shows how many items remain to be bought
 
-   ```bash
-   npx expo start
-   ```
+🕓 Shopping History
+Keeps track of previously purchased items
+Quickly add items back to the current list
 
-In the output, you'll find options to open the app in a
+💾 Local Persistence
+Uses Async Storage + Zustand for offline data storage
+Data remains even after app restarts
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🔔 Notifications
+Set reminders for individual items
+Optional weekly grocery reminder
+Helps users never miss essential purchases
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🎨 Theme Support
+Light & Dark themes with smooth transitions
+Preferences persist across sessions
 
-## Get a fresh project
+🛠️ Tech Stack
+Framework-	React Native + Expo
+Navigation-	Expo Router
+State Management-	Zustand
+Storage-	Async Storage
+Notifications-	Expo Notifications
+Icons- Ionicons
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
+📂 Project Structure
+app/
+  _layout.tsx             → Root layout & theme system
+  add-item.tsx            → Add item screen
+  (tabs)/
+    _layout.tsx           → Tab navigation
+    index.tsx             → Shopping List screen
+    history.tsx           → History of purchased items
+    settings.tsx          → Theme & reminder settings
+src/
+  store/useGroceryStore.js → Zustand store + persistence
+  utils/notifications.js    → Reminder utilities
+  theme/colors.ts           → Design system colors
+assets/
+screenshots/               → Images for README
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+🚀 Installation & Setup
+1️⃣ Clone the repository
+    git clone <your-repo-link>
+    cd grocy
 
-## Learn more
+2️⃣ Install dependencies
+    npm install
+    # or
+    bun install
 
-To learn more about developing your project with Expo, look at the following resources:
+3️⃣ Launch the app
+    npx expo start
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Open the app in:
+Expo Go (Android), or
+A development build for notifications
 
-## Join the community
+##  📸Screenshots
+### 🏠 Home Screen
+![Home](assets/screenshots/home.jpg)
 
-Join our community of developers creating universal apps.
+### 🛒 Shopping List
+![Shopping List](assets/screenshots/shopping-list.jpg)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### ✔ Remaining Items Counter
+![Remaining Items](assets/screenshots/remaining-items.jpg)
+
+### ➕ Add Item
+![Add Item](assets/screenshots/add-item.jpg)
+
+### 📚 Purchase History
+![Purchase History](assets/screenshots/purchase-history.jpg)
+
+### ⚙ Settings (Theme & Reminders)
+![Settings](assets/screenshots/settings.jpg)
+
+
+🎯 Why Grocy?
+Most grocery apps are cluttered or too complex. Grocy focuses on:
+✔ simplicity
+✔ smart organization
+✔ persistence and reminders
+✔ clean UI with theme options
+It helps users track groceries, avoid forgotten purchases, and quickly reuse previous lists.
+
+🏁 Conclusion
+Grocy demonstrates practical mobile app development with:
+real local storage
+functional UI/UX patterns
+navigation, reminders, and theme support
+
+It is a complete, working, and user-friendly grocery management solution.
+
+👨‍💻 Developer
+Samriddhi Srivastava
